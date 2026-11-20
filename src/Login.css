@@ -1,0 +1,38 @@
+.page {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+} 
+
+.login-section {
+  background-color: black;
+  width: 90%;
+  border: none;
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+.login-form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.login-input {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+}
+
+label {
+  display: block;   
+}
+
+input {
+  border-radius: 5px;
+  padding: 2px 0 1px 6px;
+  border-color: #F4845f; 
+}
+
