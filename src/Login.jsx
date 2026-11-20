@@ -33,8 +33,9 @@ const Login = () => {
           }}>LOGIN YOUR ACCOUNT</p>
           <label>EMAIL</label> 
           <input
+            className="input"
             id="email"
-            type="text"
+            type="email"
             placeholder="Input your email"
             required
           />
@@ -42,6 +43,7 @@ const Login = () => {
             marginTop: "1rem"
           }}>PASSWORD</label>
           <input
+            className="input"
             id="password"
             type="password"
             placeholder="Input your password"

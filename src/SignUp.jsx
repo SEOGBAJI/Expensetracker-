@@ -1,11 +1,18 @@
 import React from 'react'
 import finance from "./Assets/personal-finance-45.png";
 import './SignUp.css'
+import { Link } from 'react-router';
 
 const SignUp = () => {
   return (
     <main className="signup-page">
       <div className="signup-section">
+        <h1 style={{
+         color: "#F4845F",
+         fontSize: "30px",
+         textAlign: "center",
+         marginTop: "1rem"
+        }}>EXPENSETRACKER</h1>
         <div className="progresscontainer">
          <ul className="progressbar">
           <li className="active">step 1</li>
@@ -37,7 +44,7 @@ const SignUp = () => {
            <label>EMAIL</label>
            <input
              id="email"
-             type="text"
+             type="email"
              placeholder="input your email"
              required
            />
@@ -50,15 +57,25 @@ const SignUp = () => {
            />
            <label>CONFIRM PASSWORD</label>
            <input
-             id="fullname"
+             id="confirmpassword"
              type="text"
              placeholder="confirm password"
              required
            />
+           <p style={{
+              marginTop: "1rem",
+              color: "white"
+              }}>Already have am account?
+             <Link to="/login" style={{
+              color: "#F4845F",
+              textDecoration: "none",
+              marginLeft: "5px"}}>
+              LOGIN</Link>
+           </p>
          </form>
        </div> 
         
-    <div className="step2" style={{display: "none"}}>
+    <div className="step2" >
          <img 
           src={finance} 
           alt="Personal finance" 
@@ -75,7 +92,7 @@ const SignUp = () => {
            }}>CREATE YOUR ACCOUNT</p> 
            <label>DATE OF BIRTH</label>
            <input
-             id="fullname"
+             id="dob"
              type="date"
              placeholder="date of birth"
              required

@@ -30,9 +30,20 @@ label {
   display: block;   
 }
 
-input {
+.input {
   border-radius: 5px;
+  border-color: #F4845f;
   padding: 2px 0 1px 6px;
-  border-color: #F4845f; 
+  background-color: black;
+  color: white;
+  border: 2px solid #F4845f;
 }
+
+.input:focus {
+  outline: none;
+  
+}
+
+
+
 
