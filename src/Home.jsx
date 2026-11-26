@@ -16,7 +16,9 @@ import './Home.css'
           <Link to="/login">
              <button>LOGIN</button>
           </Link>
-          <button>SIGNUP</button>
+          <Link to="/signup">
+            <button>SIGNUP</button>
+          </Link>
         </div>
       </header>
       <div className="main-content">

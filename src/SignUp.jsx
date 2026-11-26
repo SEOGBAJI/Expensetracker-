@@ -58,10 +58,14 @@ const SignUp = () => {
            <label>CONFIRM PASSWORD</label>
            <input
              id="confirmpassword"
-             type="text"
+             type="password"
              placeholder="confirm password"
              required
            />
+           <button style={{
+             backgroundColor: "#F4845F",
+             color: "white"
+           }}>PROCEED</button>
            <p style={{
               marginTop: "1rem",
               color: "white"
@@ -75,7 +79,7 @@ const SignUp = () => {
          </form>
        </div> 
         
-    <div className="step2" >
+       <div className="step2" style={{display: "none"}}>
          <img 
           src={finance} 
           alt="Personal finance" 
@@ -94,23 +98,35 @@ const SignUp = () => {
            <input
              id="dob"
              type="date"
-             placeholder="date of birth"
              required
-             />
+           />
            <label>EMPLOYMENT STATUS</label>
            <select className="employment" required>
-              <option value="">Select an option</option>
               <option value="option 1">Employed</option>
               <option value="option 2">Unemployed</option>
               <option value="option 3">Student</option>
            </select>
            <label>GENDER</label>
            <select className="gender" required>
-             <option value="">choose your gender</option>
              <option value="option 1">male</option>
              <option value="option 2">female</option>
              <option value="option 3">rather not say</option>
            </select>
+           <button style={{
+             backgroundColor: "#F4845F",
+             color: "white",
+             marginTop: "1rem"
+           }}>ENTER</button>
+           <p style={{
+              marginTop: "1rem",
+              color: "white"
+              }}>Already have am account?
+             <Link to="/login" style={{
+              color: "#F4845F",
+              textDecoration: "none",
+              marginLeft: "5px"}}>
+              LOGIN</Link>
+           </p>
          </form>
         </div> 
       </div>
