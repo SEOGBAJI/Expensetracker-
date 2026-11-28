@@ -1,4 +1,4 @@
-import React from 'react'
+
 import finance from "./Assets/personal-finance-45.png";
 import './Login.css'
 import { Link } from 'react-router';
@@ -18,8 +18,6 @@ const Login = () => {
           src={finance} 
           alt="Personal finance" 
           style={{
-            width: "400px",
-            height: "500px",
             color: "#F4845F"
           }} 
           />

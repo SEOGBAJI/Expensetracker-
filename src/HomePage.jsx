@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpLong, faDownLong, faMoneyBills } from '@fortawesome/free-solid-svg-icons';
 import './HomePage.css'

@@ -4,7 +4,6 @@
   margin: 10rem 1rem; 
   border-radius: 7px;
   padding: 10px;
-  height: 70%
 }
 
 .section {
@@ -21,6 +20,10 @@
   margin-bottom: 4rem;
   padding: 10px;
 }
+
+.header h1 {
+  font-size: 20px;
+  }
 
 .buttons {
   display: flex;
@@ -41,6 +44,15 @@ button {
   justify-content: space-between;
 }
 
+.main-text {
+  font-size: 50px;
+}
+
+img {
+  width: 400px;
+  height: 500px;
+}
+
 .section-content {
   background-color: #f4845f;
   color: #f4845f;
@@ -58,3 +70,42 @@ button {
   border-radius: 10px;
   text-align: center;
 }
+
+@media (max-width: 390px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+      font-size: 10px;
+  }
+
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-text {
+    font-size: 25px;
+  }
+
+  img {
+    margin-left: 3.5rem;
+    width: 200px;
+    height: 250px;
+  }
+}
+
+  @media (min-width: 500px) and (max-width: 600px) {
+    .main-content {
+      display: flex;
+      flex-direction: column;
+    }
+  }

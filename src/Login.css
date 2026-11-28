@@ -18,6 +18,11 @@
   justify-content: space-evenly;
 }
 
+img {
+  width: 400px;
+  height: 500px;
+}
+
 .login-input {
   color: white;
   display: flex;
@@ -43,6 +48,28 @@ label {
   outline: none;
   
 }
+
+@media (Max-width: 500px) {
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 200px;
+    height: 250px;
+    margin-right: 3.6rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+    .login-form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
 
 
